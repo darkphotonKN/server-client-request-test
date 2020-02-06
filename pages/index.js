@@ -1,6 +1,8 @@
-import React from 'react'
-import Head from 'next/head'
-import Nav from '../components/nav'
+import React from 'react';
+import Head from 'next/head';
+import Link from 'next/link';
+
+import Nav from '../components/nav';
 
 const Home = () => (
   <div>
@@ -33,6 +35,10 @@ const Home = () => (
           <h3>Examples &rarr;</h3>
           <p>Find other example boilerplates on the Next.js GitHub.</p>
         </a>
+
+        <Link href="/api-test">
+          <a>API Test</a>
+        </Link>
       </div>
     </div>
 
@@ -83,6 +89,6 @@ const Home = () => (
       }
     `}</style>
   </div>
-)
+);
 
-export default Home
+export default Home;
